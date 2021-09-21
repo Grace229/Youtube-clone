@@ -1,0 +1,29 @@
+<%- include('../partials/formHeader.ejs') -%>
+<div class="body" style="position: relative;">
+    <div style="position: absolute; top: 2px;
+    right: 0px; left: 0px;">
+        <%- include('../message.ejs') -%>
+         
+        </div>
+    <div class="container-form">
+        <div class="heading">
+            <h1>Sign up to WaawTube </h1>
+            <h3>Already a member? <a href="/login">Log in</a></h3>
+        </div>
+    
+        <form action="/auth/register" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="userName" id="" placeholder="e.g rissa">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="" placeholder="name@gmail.com">
+            <label for="email">Password</label>
+            <input type="password" name="password" id="" placeholder="6+ characters">
+            <label for="password"> Confirm Password</label>
+            <input type="password" name="confirmPassword" id="" placeholder="6+ characters">
+    
+    
+            <button type="submit" value="continue" class="button">Continue</button>
+        </form>
+    </div>
+</div>
+    <%- include('../partials/foot') -%>

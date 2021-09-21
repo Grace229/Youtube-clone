@@ -1,0 +1,27 @@
+
+      <% if (success_message && success_message.length > 0) { %>
+        <div style="height: 100px; width: 450px; margin-left: 50px; background-color: greenyellow; color: white;">
+            <div style="float: right;" >
+             <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; height: 25px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+               </svg>
+            </div>
+             <p><%- success_message %></p>
+         </div>
+        <% } %>
+
+
+      <% if (error_message && error_message.length > 0) { %>
+        <div style="height: 100px; width: 450px; margin-left: 50px; background-color: red; color: white;">
+            <div style="float: right;" >
+             <svg xmlns="http://www.w3.org/2000/svg" style="width: 25px; height: 25px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+               </svg>
+            </div>
+             <p><%- error_message %></p>
+         </div>
+        <% } %>
+
+       
+        
+     
